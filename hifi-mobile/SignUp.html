@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="title" content="Project Name" />
+    <meta name="keywords" content="Project Name" />
+    <meta name="description" content="Project Name" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <script defer src="./js/libs/jquery.min.js"></script>
+    <script defer src="./js/ui/common.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head_area">
+            <button type="button" class="back_btn">
+                <span class="icon type6 icon_back">
+                    <span>뒤로가기</span>
+                </span>
+            </button>
+            <h2 class="title">HiFi Membership</h2>
+            <div class="right_box">
+                <button type="button" class="user_btn">
+                    <span class="icon icon_member">
+                        <span>마이페이지</span>
+                    </span>
+                </button>
+                <button type="button" class="close_btn">
+                    <span class="icon type6 icon_close">
+                        <span>닫기</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="row full_row border13">
+                <div class="login_area">
+                    <h3 class="tit">Sign Up</h3>
+                    <div class="input_box">
+                        <p>Name</p>
+                        <div>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <p>E-Mail</p>
+                        <div>
+                            <input type="text" placeholder="">
+                            <span>@</span>
+                            <input type="text" placeholder="">
+                        </div>
+                        <button type="button" class="btn btn_f">Get authentication number</button>
+                        <input type="text">
+                        <button type="button" class="btn btn_f">Confirm</button>
+                        <p>Please enter the authentication number sent by e-mail to verify your identity.</p>
+                    </div>
+                    <div class="input_box">
+                        <p>Password</p>
+                        <input type="password" placeholder="4 digits or more in English and numeric combinations">
+                        <input type="password" placeholder="Confirm Password">
+                        <span class="check">
+                            <input type="checkbox" name="sCheck12" id="sCheck12" value="">
+                            <label for="sCheck12"><span>I accept the terms of service and privacy policy.</span></label>
+                        </span>
+                    </div>
+                    <div class="btn_box">
+                        <button type="button" class="btn btn_f succ_btn">Amendment</button>
+                        <button type="button" class="btn btn_f cancel_btn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row full_row" style="border-radius: 15px 15px 0 0;margin-top: 30px;">
+                <div>
+                    <div class="tit_box">
+                        <h3 class="title">Cancel Membership</h3>
+                    </div>
+                    <div class="cont_box">
+                        <div class="txt">
+                            <p>If you withdraw as a member, all points and applications for exchange are invalid.<br>It will be processed. You will be asked to exchange or compensate for points you have earned.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup_aria" id="popup01">
+        <div class="pop_cont">
+            <div class="popup_h">
+                <h2 class="tit">Cancel Membership</h2>
+            </div>
+            <div class="popup_b">
+                <p class="txt">Are you sure you want to cancel your membership?</p>
+            </div>
+            <div class="popup_f">
+                <div class="btn_box">
+                    <button type="button" class="btn btn_f succ_btn">OK</button>
+                    <button type="button" class="btn btn_f cancel_btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+</body>
+</html>

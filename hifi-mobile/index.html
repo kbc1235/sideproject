@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="title" content="Project Name" />
+    <meta name="keywords" content="Project Name" />
+    <meta name="description" content="Project Name" />
+    <title>Hi-Fi</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <script defer src="./js/libs/jquery.min.js"></script>
+    <script defer src="./js/ui/common.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head_area">
+            <button type="button" class="back_btn">
+                <span class="icon type6 icon_back">
+                    <span>뒤로가기</span>
+                </span>
+            </button>
+            <h2 class="title">HiFi Membership</h2>
+            <div class="right_box">
+                <button type="button" class="user_btn">
+                    <span class="icon icon_member">
+                        <span>마이페이지</span>
+                    </span>
+                </button>
+                <button type="button" class="close_btn">
+                    <span class="icon type6 icon_close">
+                        <span>닫기</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="row border13">
+                <div>
+                    <div class="tit_box">
+                        <span class="icon icon_member">
+                            <span>멤버스</span>
+                        </span>
+                        <h3 class="title">Membership Guide</h3>
+                    </div>
+                    <div class="cont_box">
+                        <div class="txt">
+                            <p>If you sign up for Hi-Fi membership and use Hi-Fi Free Wi-Fi, Points are accumulated whenever you watch an ad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="tit_box">
+                        <span class="icon icon_point">
+                            <span>포인트</span>
+                        </span>
+                        <h3 class="title">Point Exchange Guide</h3>
+                    </div>
+                    <div class="cont_box">
+                        <div class="txt">
+                            <p>You can exchange points to SBT Coin.</p>
+                            <p>You must accumulate at least 10,000 points</p>
+                            <p>
+                                You can exchange more than 10,000P.<br>
+                                Currency exchange is exchanged for virtual<br>
+                                currency SBT Coin. 
+                            </p>
+                            <p>
+                                Download and install SBT Wallet from Google Play<br>
+                                Store to receive SBT Coin exchange.<br>
+                                Coin is exchanged to SBT Wallet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row full_row">
+                <div class="login_area">
+                    <h3 class="tit">Sign Up</h3>
+                    <div class="input_box">
+                        <p>Name</p>
+                        <div>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <p>E-Mail</p>
+                        <div>
+                            <input type="text" placeholder="">
+                            <span>@</span>
+                            <input type="text" placeholder="">
+                        </div>
+                        <button type="button" class="btn btn_f">Get authentication number</button>
+                        <input type="text">
+                        <button type="button" class="btn btn_f">Confirm</button>
+                        <p>Please enter the authentication number sent by e-mail to verify your identity.</p>
+                    </div>
+                    <div class="input_box">
+                        <p>Password</p>
+                        <input type="password" placeholder="4 digits or more in English and numeric combinations">
+                        <input type="password" placeholder="Confirm Password">
+                        <span class="check">
+                            <input type="checkbox" name="sCheck12" id="sCheck12" value="">
+                            <label for="sCheck12"><span>I accept the terms of service and privacy policy.</span></label>
+                        </span>
+                    </div>
+                    <button type="button" class="btn btn_f">Member Join</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup_aria" id="popup01">
+        <div class="pop_cont">
+            <div class="popup_h"></div>
+            <div class="popup_b">
+                <p class="txt">The authentication number is sent to the email address you entered.</p>
+            </div>
+            <div class="popup_f">
+                <button type="button" class="btn pop_close">Close</button>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+</body>
+</html>

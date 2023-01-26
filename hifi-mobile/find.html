@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="title" content="Project Name" />
+    <meta name="keywords" content="Project Name" />
+    <meta name="description" content="Project Name" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <script defer src="./js/libs/jquery.min.js"></script>
+    <script defer src="./js/ui/common.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head_area">
+            <button type="button" class="back_btn">
+                <span class="icon type6 icon_back">
+                    <span>뒤로가기</span>
+                </span>
+            </button>
+            <h2 class="title">HiFi Membership</h2>
+            <div class="right_box">
+                <button type="button" class="user_btn">
+                    <span class="icon icon_member">
+                        <span>마이페이지</span>
+                    </span>
+                </button>
+                <button type="button" class="close_btn">
+                    <span class="icon type6 icon_close">
+                        <span>닫기</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="row full_row border13">
+                <div class="login_area">
+                    <h3 class="tit">ID Find</h3>
+                    <div class="input_box">
+                        <p>Name</p>
+                        <div>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <p>Password</p>
+                        <input type="password" placeholder="Login Password">
+                        <button type="button" class="btn btn_f">Find</button>
+                    </div>
+                </div>
+                <div class="login_area">
+                    <h3 class="tit">Password Find</h3>
+                    <div class="input_box">
+                        <p>Name</p>
+                        <div>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <p>E-Mail</p>
+                        <div>
+                            <input type="text" placeholder="">
+                            <span>@</span>
+                            <input type="text" placeholder="">
+                        </div>
+                        <button type="button" class="btn btn_f">Find</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup_aria" id="popup01">
+        <div class="pop_cont">
+            <div class="popup_h">
+                <h2 class="tit">Result</h2>
+            </div>
+            <div class="popup_b">
+                <p class="txt">Hi-Fi@gmail.com</p>
+            </div>
+            <div class="popup_f">
+                <button type="button" class="btn btn_f pop_close">Close</button>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+</body>
+</html>
