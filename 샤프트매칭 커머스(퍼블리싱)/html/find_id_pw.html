@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="title" content="Hausys in story">
+<meta name="keywords" content="Hausys in story">
+<meta name="description" content="Hausys in story">
+<title>샤프트 - 아이디/비밀번호 찾기 | Hausys in story</title>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/components.css">
+
+<script defer src="../js/common.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+           <div class="back_btn">
+           </div>
+            <h1 class="logo"><img src="../img/img_logo.png" alt=""></h1>
+            <div class="right_btns">
+                <span class="basket"><a href="#"><img src="../img/btn_basket.png" alt="장바구니"><span class="basket_ea">12</span></a></span>
+                <span class="slide_menu"><a href="#" class="menu_btn"><img src="../img/btn_menu.png" alt=""></a></span>
+            </div>
+        </header>
+        <!-- //Header -->
+     
+        <!-- Container -->
+        <main role="main" class="container bg_color_gray">
+            <div class="top_box img">
+              <div class="img_box">
+                <img src="../img/signup_logo_dark.png" alt="스윙정보 빅데이트 분석 시스템">
+              </div>
+            </div>
+            <div class="info_wrap">
+              <div class="info_input_box fs_14">
+                <p>아이디 찾기 </p>
+                <ul class="input_list">
+                <li>
+                    <label for="info_pw">비밀번호</label>
+                    <input type="text" id="info_pw" placeholder="영문 또는 숫자 4~8자리 입력">
+                    </li>
+                  <li>
+                    <label for="info_number">휴대폰번호</label>
+                    <input type="number" id="info_number" placeholder="숫자만 입력">
+                  </li>
+                  <button class="home check_others navy full_w"><a href="#">아이디 찾기</a> </button>
+                </ul>
+              </div>
+
+              <div class="info_input_box fs_14">
+                <p>비밀번호 찾기 </p>
+                <ul class="input_list">
+                <li>
+                    <label for="info_number">이메일</label>
+                    <input type="number" id="info_number" placeholder="이메일 주소">
+                    <div class="button white"><a href="#" onclick="popUpOpen('findAddress')">직접입력</a> </div>
+                </li>
+                <li>
+                    <label for="info_number">휴대폰번호</label>
+                    <input type="number" id="info_number" placeholder="숫자만 입력">
+                  </li>
+                  <button class="home check_others navy full_w"><a href="#">비밀번호 찾기</a> </button>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Alert-->
+            <!-- alert 이메일 -->
+            <div class="secGuide line">
+                <div class="alert_wrap radio_alert" id="findAddress">
+                    <div class="content">
+                        <span>
+                          <label for="_self"><input type="radio" name="mail" id="_self" class="radio_input" value="직접입력" onclick="alertValue(ev)" checked>직접입력</label>
+                          <label for="naver"><input type="radio" name="mail" id="naver" class="radio_input" value="naver.com" onclick="alertValue(ev)">naver.com</label>
+                          <label for="daum"><input type="radio" name="mail" id="daum" class="radio_input" value=">daum.com" onclick="alertValue(ev)">daum.com</label>
+                          <label for="hanmail"><input type="radio" name="mail" id="hanmail"  class="radio_input"value="hanmail.com" onclick="alertValue(ev)">hanmail.com</label>
+                          <label for="gmail"><input type="radio" name="mail" id="gmail" class="radio_input" value="gmail.com" onclick="alertValue(ev)">gmail.com</label>
+                        </span>
+                        <div class="btns_box full_btn">
+                            <a href="#" class="btn btnF btnC2 closeBtn"  onclick="popClose('findAddress')">확인</a>
+                        </div>
+                    </div>
+               </div>
+            <!-- 2-1 -->
+            <div class="secGuide line">
+              <div class="alert_wrap">
+                  <div class="content">
+                      <span>입력하신 휴대폰번호로 아이디를발송하였습니다.</span>
+                      <div class="btns_box full_btn">
+                          <a href="#" class="btn btnF btnC2">확인</a>
+                      </div>
+                  </div>
+             </div>
+            <!-- 2-2 -->
+            <div class="secGuide line">
+              <div class="alert_wrap">
+                  <div class="content">
+                      <span>입력하신 정보를확인해주십시오.</span>
+                      <div class="btns_box full_btn">
+                          <a href="#" class="btn btnF btnC2">확인</a>
+                      </div>
+                  </div>
+             </div>
+            <!-- 3-1 -->
+            <div class="secGuide line">
+              <div class="alert_wrap">
+                  <div class="content">
+                      <span>입력하신 휴대폰번호로 비밀번호를발송하였습니다.</span>
+                      <div class="btns_box full_btn">
+                          <a href="#" class="btn btnF btnC2">확인</a>
+                      </div>
+                  </div>
+             </div>
+            <!-- 3-2 -->
+            <div class="secGuide line">
+              <div class="alert_wrap">
+                  <div class="content">
+                    <span>입력하신 정보를확인해주십시오.</span>
+                    <div class="btns_box full_btn">
+                          <a href="#" class="btn btnF btnC2">확인</a>
+                      </div>
+                  </div>
+             </div>
+        </main>
+        <!-- //Container -->
+     
+            <!-- SideBar -->
+            <div class="side_bar">
+                <div class="side_wrap">
+                <div class="side_menu">
+                    <!-- 비로그인 -->
+                    <div class="login_not" style="display:none">
+                        <div class="btns_box full_btn">
+                            <a href="#" class="btn btnF">로그인</a>
+                            <a href="#" class="btn btnF btnL">회원가입</a>
+                        </div>
+                    </div>
+                    <!-- //비로그인 -->
+
+                    <!-- 로그인 -->
+                    <div class="login">
+                        <div class="log_info">
+                            <span class="name">회원님 로그인중</span>
+                            <span class="point">보유포인트 <strong>2,500P</strong></span>
+                        </div>
+                        <div class="btns_box full_btn">
+                            <a href="#" class="btn btnF">로그아웃</a>
+                        </div>
+                    </div>
+                    <!-- //로그인 -->
+                    <div class="menu_wrap">
+                        <ul class="user_menu">
+                            <li><a href="#">정보수정</a></li>
+                            <li><a href="#">나의 스윙정보</a></li>
+                            <li><a href="#">구매내역</a></li>
+                            <li><a href="#">포인트 내역</a></li>
+                        </ul>
+                        <ul class="board_list">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">회원가입 및 이용약관</a></li>
+                            <li><a href="#">개인정보 취급방침</a></li>
+                        </ul>
+                        <div class="auto_login swich_wrap">
+                            <span>자동 로그인 설정</span>
+                            <input type="checkbox" id="switch1" name="switch1" class="swich_btn swich_input">
+                            <label for="switch1" class="swich_btn">
+                                <span class="marble"></span>
+                                <span class="on">ON</span>
+                                <span class="off">OFF</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <!-- 닫기 -->
+                    <a href="#" class="slide_close">
+                        <img src="../img/btn_close.png" alt="닫기">
+                    </a>
+                    <!--// 닫기 -->
+                </div>
+                </div>
+                <!-- 
+                    팝업 노출시 display:block;
+                -->
+                <div class="alert_wrap">
+                    <div class="content">
+                        <span>로그인 후 이용해 주세요.</span>
+                        <div class="btns_box full_btn">
+                            <a href="#" class="btn btnF btnC2">확인</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // SideBar -->
+    </div>
+    <div class="dim"></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.header{position: fixed;width:100%;background: tomato;top:0;left: 0;}
+.header h1{padding: 20px 10px; color:#fff}
+.container{margin-top: 56px; display: flex;}
+
+.side_bar{width:240px;height: calc(100vh - 56px);border-right: 1px solid #e9e9e9;}
+.side_bar .list li a{display:flex;padding:10px}
+.side_bar .list li:not(:first-child){border-top:1px solid #e9e9e9}
+
+.guide_box{width: calc(100% - 240px);padding: 20px 0 ;}
+.secGuide{width:100%;padding:20px;}
+.secGuide + .secGuide{margin-top: 6px;}
+.secGuide.line{position: relative;}
+.secGuide.line::after{content: '';width:100%;height:6px;background: #e5e5e5;position: absolute;top:-6px;}
+.iframe_wrap{max-width: 360px;height:760px;margin-top:20px;border:1px solid #e9e9e9}
+.iframe_wrap iframe{width:100%;height: 100%;}

@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="title" content="Hausys in story">
+<meta name="keywords" content="Hausys in story">
+<meta name="description" content="Hausys in story">
+<title>장바구니</title>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/components.css">
+
+<script defer src="../js/common.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="back_btn">
+                <span><a href="#"><img src="../img/btn_back.png" alt="뒤로가기"></a></span>
+            </div>
+             <h1 class="logo"><img src="../img/img_logo.png" alt=""></h1>
+             <div class="right_btns">
+                 <span class="basket"><a href="#"><img src="../img/btn_basket.png" alt="장바구니"><span class="basket_ea">12</span></a></span>
+                 <span class="slide_menu"><a href="#" class="menu_btn"><img src="../img/btn_menu.png" alt=""></a></span>
+             </div>
+         </header>
+         <!-- //Header -->
+     
+        <!-- Container -->
+        <main role="main" class="container">
+            <div class="basket_wrap ">
+                <!-- 장바구니 없을 상품있을경우 -->
+                <div class="nodata" style="display: none;">
+                    <span>장바구니가 비어있습니다</span>
+                </div>
+
+                <!-- 장바구니 상품있을경우 -->
+               <div class="backet_data" >
+                <div class="basket_list">
+                    <ul class="list">
+                        <li>
+                            <div class="item_top"> 
+                                <span class="check">
+                                    <input type="checkbox" name="sCheck11" id="sCheck11" value="" checked>
+                                    <label for="sCheck11"><span class="blind">Hidden</span></label>
+                                </span>
+                                <h3 class="name">KLOUSER  JUNGLE</h3>
+                                <span class="del_btn"><a href="#"><img src="../img/btn_del.png" alt="삭제"></a></span>
+                            </div>
+                            <div class="basket_info">
+                                <div class="img_box">
+                                    <img src="../img/@img_basket_item01.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="left">
+                                        <span><em>상품가격</em>265,000원</span>
+                                        <span><em>배송비</em>무료</span>
+                                        <span><em>구매혜택</em>10%할인</span>
+                                        <span><em>브랜드</em>크루저</span>
+                                        <span><em>수량</em>1개</span>
+                                    </div>
+                                    <div class="right">
+                                        <span><em>옵션1</em>플래티넘 스피터</span>
+                                        <span><em>옵션2</em>BLACK</span>
+                                        <span><em>옵션3</em>SR50</span>
+                                    </div>
+                                </div>
+                                <div class="btns_box full_btn">
+                                    <a href="#" class="btn btnS btnC2 btn_option">옵션변경</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_top"> 
+                                <span class="check">
+                                    <input type="checkbox" name="sCheck12" id="sCheck12" value="">
+                                    <label for="sCheck12"><span class="blind">Hidden</span></label>
+                                </span>
+                                <h3 class="name">KLOUSER  JUNGLE</h3>
+                                <span class="del_btn"><a href="#"><img src="../img/btn_del.png" alt="삭제"></a></span>
+                            </div>
+                            <div class="basket_info">
+                                <div class="img_box">
+                                    <img src="../img/@img_basket_item01.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="left">
+                                        <span><em>상품가격</em>265,000원</span>
+                                        <span><em>배송비</em>무료</span>
+                                        <span><em>구매혜택</em>10%할인</span>
+                                        <span><em>브랜드</em>크루저</span>
+                                        <span><em>수량</em>1개</span>
+                                    </div>
+                                    <div class="right">
+                                        
+                                    </div>
+                                </div>
+                                <div class="btns_box full_btn">
+                                    <a href="#" class="btn btnS btnC2 btn_option">옵션변경</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="prd_payment_total">
+                    <div class="payment_info">
+                        <span><em>총상품 금액</em>456,000원</span>
+                        <span><em>총 주문 수량</em>2</span>
+                        <span><em>총 할인금액</em>1,250원</span>
+                        <span><em>배송비용</em>무료</span>
+                    </div>
+                    <div class="total_payment">
+                        <span>상품 결제 금액</span> 456,000원
+                    </div>
+                </div>
+                <div class="btns_box full_btn fix_btn">
+                    <a href="#" class="btn btnF">주문하기</a>
+                </div>
+               </div>
+            </div>
+        </main>
+        <!-- //Container -->
+
+        <!-- SideBar -->
+        <div class="side_bar">
+            <div class="side_wrap">
+             <div class="side_menu">
+                 <!-- 비로그인 -->
+                 <div class="login_not" style="display:none">
+                     <div class="btns_box full_btn">
+                         <a href="#" class="btn btnF">로그인</a>
+                         <a href="#" class="btn btnF btnL">회원가입</a>
+                     </div>
+                 </div>
+                 <!-- //비로그인 -->
+
+                 <!-- 로그인 -->
+                 <div class="login">
+                     <div class="log_info">
+                         <span class="name">회원님 로그인중</span>
+                         <span class="point">보유포인트 <strong>2,500P</strong></span>
+                     </div>
+                     <div class="btns_box full_btn">
+                         <a href="#" class="btn btnF">로그아웃</a>
+                     </div>
+                 </div>
+                 <!-- //로그인 -->
+                 <div class="menu_wrap">
+                     <ul class="user_menu">
+                         <li><a href="#">정보수정</a></li>
+                         <li><a href="#">나의 스윙정보</a></li>
+                         <li><a href="#">구매내역</a></li>
+                         <li><a href="#">포인트 내역</a></li>
+                     </ul>
+                     <ul class="board_list">
+                         <li><a href="#">공지사항</a></li>
+                         <li><a href="#">회원가입 및 이용약관</a></li>
+                         <li><a href="#">개인정보 취급방침</a></li>
+                     </ul>
+                     <div class="auto_login swich_wrap">
+                         <span>자동 로그인 설정</span>
+                         <input type="checkbox" id="switch1" name="switch1" class="swich_btn swich_input">
+                         <label for="switch1" class="swich_btn">
+                             <span class="marble"></span>
+                             <span class="on">ON</span>
+                             <span class="off">OFF</span>
+                         </label>
+                     </div>
+
+                 </div>
+
+                 <!-- 닫기 -->
+                 <a href="#" class="slide_close">
+                     <img src="../img/btn_close.png" alt="닫기">
+                 </a>
+                 <!--// 닫기 -->
+             </div>
+            </div>
+         </div>
+         <!-- //SideBar -->
+    </div>
+     <!-- 상품 옵션 팝업 -->
+     <div class="alert_wrap" id="pop_option">
+        <div class="pop_head">
+            <h2 class="title">상품옵션</h2>
+            <a href="#" class="pop_close"><img src="../img/btn_del.png" alt="닫기"></a>
+        </div>
+         <div class="content">
+             <div class="drop_box">
+                 <ul class="drop_menu">
+                     <li>
+                         <h3 class="drop_btn">
+                             <a href="#">플래티넘 스피너</a>
+                         </h3>
+                         <ul class="drop_list">
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item1" id="item1_1" value="item1_1" checked>
+                                   <label for="item1_1"><span>NX 40 R</span></label>
+                               </span>
+                            </li>
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item1" id="item1_2" value="item1_2">
+                                   <label for="item1_2"><span>NX 50 R</span></label>
+                               </span>
+                            </li>
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item1" id="item1_3" value="item1_3">
+                                   <label for="item1_3"><span>NX 55 S</span></label>
+                               </span>
+                            </li>
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item1" id="item1_4" value="item1_4">
+                                   <label for="item1_4"><span>NX 60 R</span></label>
+                               </span>
+                            </li>
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item1" id="item1_5" value="item1_5">
+                                   <label for="item1_5"><span>NX 60 S</span></label>
+                               </span>
+                            </li>
+                        </ul>
+                     </li>
+                     <li>
+                         <h3 class="drop_btn">
+                             <a href="#">NX 40 R</a>
+                         </h3>
+                         <ul class="drop_list">
+                             <li>
+                                <span class="radio">
+                                    <input type="radio" name="item2" id="item2_1" value="item2_1" checked>
+                                    <label for="item2_1"><span>NX 40 R</span></label>
+                                </span>
+                             </li>
+                             <li>
+                                <span class="radio">
+                                    <input type="radio" name="item2" id="item2_2" value="item2_2">
+                                    <label for="item2_2"><span>NX 50 R</span></label>
+                                </span>
+                             </li>
+                             <li>
+                                <span class="radio">
+                                    <input type="radio" name="item2" id="item2_3" value="item2_3">
+                                    <label for="item2_3"><span>NX 55 S</span></label>
+                                </span>
+                             </li>
+                             <li>
+                                <span class="radio">
+                                    <input type="radio" name="item2" id="item2_4" value="item2_4">
+                                    <label for="item2_4"><span>NX 60 R</span></label>
+                                </span>
+                             </li>
+                             <li>
+                                <span class="radio">
+                                    <input type="radio" name="item2" id="item2_5" value="item2_5">
+                                    <label for="item2_5"><span>NX 60 S</span></label>
+                                </span>
+                             </li>
+                         </ul>
+                     </li>
+                     <li>
+                         <h3 class="drop_btn">
+                             <a href="#">BLACK</a>
+                         </h3>
+                         <ul class="drop_list">
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item3" id="item3_1" value="item3_1" checked>
+                                   <label for="item3_1"><span>NX 40 R</span></label>
+                               </span>
+                            </li>
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item3" id="item3_2" value="item3_2">
+                                   <label for="item3_2"><span>NX 50 R</span></label>
+                               </span>
+                            </li>
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item3" id="item3_3" value="item3_3">
+                                   <label for="item3_3"><span>NX 55 S</span></label>
+                               </span>
+                            </li>
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item3" id="item3_4" value="item3_4">
+                                   <label for="item3_4"><span>NX 60 R</span></label>
+                               </span>
+                            </li>
+                            <li>
+                               <span class="radio">
+                                   <input type="radio" name="item3" id="item3_5" value="item3_5">
+                                   <label for="item3_5"><span>NX 60 S</span></label>
+                               </span>
+                            </li>
+                        </ul>
+                     </li>
+                 </ul>
+                 <div class="prd_total">
+                     <span>구매수량</span>
+                     <div class="prd_quantity">
+                         <a href="#" class="btn_decrease" onclick="count('minus')"><img src="../img/btn_decrease.png" alt="감소"></a>
+                         <span id="result" class="num">1</span>
+                         <a href="#" class="btn_increase" onclick="count('plus')"><img src="../img/btn_increase.png" alt="증가"></a>
+                     </div>
+                 </div>
+             </div>
+             <div class="btns_box">
+                 <a href="#" class="btn btnF btnC2 btnS">확인</a>
+             </div>
+         </div>
+    </div>
+     <!-- 상품 옵션 선택 얼럿팝업 -->
+     <div class="alert_wrap">
+        <div class="content">
+            <span>상품 옵션을 먼저 선택해 주세요.</span>
+            <div class="btns_box full_btn">
+                <a href="#" class="btn btnF btnC2">확인</a>
+            </div>
+        </div>
+   </div>
+   <div class="dim"></div>
+</body>
+</html>
