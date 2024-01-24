@@ -1,0 +1,482 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: "NEXON";
+  src: url("../fonts/NEXONLv2GothicLight.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NEXON";
+  src: url("../fonts/NEXONLv2GothicMedium.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NEXON";
+  src: url("../fonts/NEXONLv2GothicBold.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Puradak";
+  src: url("../fonts/PuradakGentleGothic.ttf") format("truetype");
+  font-weight: 400;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "NEXON";
+  font-weight: 400;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  color: #222;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+header,
+footer,
+main,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  font-family: "NEXON";
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+:root {
+  --mainColor: #3ab54a;
+  --subColor: #2e8a3e;
+  --subColor2: #b89847;
+  --subColor3: #2ba9fd;
+  --mainFont: "NEXON";
+  --whiteColor: #fff;
+  --grayColor: #f6f6f6;
+  --grayColor2: #dcdcdc;
+  --grayColor3: #9e9e9e;
+  --backColor: #222;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2.3rem 5rem;
+}
+.header__logo {
+  width: 100px;
+}
+.header__menu {
+  margin-left: 7.6rem;
+}
+.header__menu > ul {
+  display: flex;
+}
+.header__menu > ul li + li {
+  margin-left: 5.45rem;
+}
+.header__menu > ul a {
+  font-size: 18px;
+  font-family: var(--mainFont);
+  font-weight: 500;
+  color: var(--whiteColor);
+}
+.header__menu > ul a:hover {
+  color: var(--mainColor);
+}
+.header__usemenu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header__usemenu > div + div {
+  margin-left: 20px;
+}
+.header__usemenu .sell_btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  padding: 14px;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--mainFont);
+}
+.header__usemenu .sell_btn button:hover {
+  background-color: var(--subColor);
+}
+
+.swiper {
+  background: rgba(255, 0, 0, 0.2);
+  min-height: 690px;
+}
+.swiper-wrapper {
+  background: rgba(0, 255, 0, 0.3);
+}
+.swiper-slide {
+  height: 100%;
+  background: rgba(0, 0, 255, 0.4);
+}
+.swiper-slide-cont {
+  max-width: 1084px;
+  margin: 0 auto;
+}
+
+.banner_wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1084px;
+  margin: 20px auto 0;
+  gap: 24px;
+}
+.banner_wrap > div {
+  border: 10px solid #2e8a3e;
+  height: 140px;
+}
+
+.wrap-test {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: tomato;
+  z-index: 1;
+}
+.wrap-test div {
+  max-width: 1084px;
+  height: 100%;
+  margin: 0 auto;
+  background: blue;
+}
+
+.contents {
+  display: flex;
+  max-width: 1084px;
+  margin: 28px auto 0;
+}
+.contents > div {
+  min-width: 300px;
+}
+.contents > div:first-of-type {
+  width: 300px;
+}
+.contents > div:not(:first-of-type) {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.left_box > .tab {
+  position: sticky;
+  top: 120px;
+  left: 0;
+}
+
+.tab + .tab {
+  margin-top: 68px;
+}
+.tab .head {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid var(--grayColor);
+}
+.tab .head > div {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  font-size: 16px;
+  font-family: var(--mainFont);
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+.tab .head > div.active {
+  color: var(--mainColor);
+  border-bottom: 2px solid var(--mainColor);
+}
+.tab .head .title {
+  font-size: 26px;
+  font-weight: 500;
+}
+.tab .head .more {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--grayColor2);
+  background-color: var(--grayColor);
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+.tab .tabs {
+  display: flex;
+  width: 100%;
+  border: 1px solid var(--grayColor2);
+}
+.tab .tabs:is(.condo) button.active {
+  color: var(--subColor2);
+}
+.tab .tabs:is(.fitness) button.active {
+  color: var(--subColor3);
+}
+.tab .tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 12px 20px;
+  background: transparent;
+  color: var(--grayColor3);
+  font-weight: 500;
+}
+.tab .tabs button.active {
+  color: var(--mainColor);
+}
+.tab .cont {
+  margin-top: 20px;
+}
+.tab .cont .grid_box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px 10px;
+}
+.tab .cont .grid_box .item .img {
+  width: 100%;
+  height: 140px;
+  background-color: #eee;
+}
+.tab .cont .grid_box .item .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tab .cont .grid_box .item .text {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.tab .cont > div:not(.active) {
+  display: none;
+}
+.tab:is(.type2) .head {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid var(--grayColor);
+}
+.tab:is(.type2) .head > div {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  font-size: 16px;
+  font-family: var(--mainFont);
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+.tab:is(.type2) .head > div.active {
+  color: var(--mainColor);
+  border-bottom: 2px solid var(--mainColor);
+}
+.tab:is(.type2) .head .title {
+  font-size: 26px;
+  font-weight: 500;
+}
+.tab:is(.type2) .head .more {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--grayColor2);
+  background-color: var(--grayColor);
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+.tab:is(.type2) .cont {
+  margin-top: 0;
+}
+.tab:is(.type2) .cont__head {
+  display: grid;
+  grid-template-columns: 140px 1fr 1fr;
+  border: 1px solid var(--grayColor2);
+}
+.tab:is(.type2) .cont__head > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-size: 12px;
+  font-family: var(--mainFont);
+  font-weight: 500;
+}
+.tab:is(.type2) .cont__body {
+  border: 1px solid var(--grayColor2);
+  border-top: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.tab:is(.type2) .cont__body .colum {
+  display: grid;
+  grid-template-columns: 140px 1fr 1fr;
+}
+.tab:is(.type2) .cont__body .colum + .colum {
+  border-top: 1px solid var(--grayColor2);
+}
+.tab:is(.type2) .cont__body .colum > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-size: 12px;
+  font-family: var(--mainFont);
+  font-weight: normal;
+}
+.tab:is(.type2) .tabs {
+  display: flex;
+  width: 100%;
+}
+.tab:is(.type2) .tabs button {
+  flex: 1;
+  padding: 12px 20px;
+  background-color: var(--grayColor2);
+  color: var(--backColor);
+  font-weight: 500;
+}
+.tab:is(.type2) .tabs button.active {
+  background-color: var(--mainColor);
+  color: #fff;
+}/*# sourceMappingURL=common.css.map */

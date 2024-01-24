@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./style/common.css" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background: url(./images/index-02.jpg) no-repeat top left / 100%;
+      padding-bottom: 30px;
+      height: 120000px;
+    "
+  >
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">골프회원권</a></li>
+          <li><a href="#">콘도회원권</a></li>
+          <li><a href="#">휘트니스회원권</a></li>
+        </ul>
+      </div>
+      <div class="header__usemenu">
+        <div class="search_btn"><button type="button">검색</button></div>
+        <div class="mypage_btn"><button type="button">마이페이지</button></div>
+        <div class="sell_btn"><button type="button">매매신청</button></div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- 메인  슬라이드 영역 -->
+      <section class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide-cont">123123123</div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+
+      <div class="banner_wrap">
+        <div>banner1</div>
+        <div>banner2</div>
+      </div>
+      <section class="contents">
+        <div class="left_box">
+          <div class="tab type2">
+            <div class="head">
+              <h3 class="title">회원권 시세</h3>
+            </div>
+            <div class="tabs">
+              <button class="tab-btn active">골프</button>
+              <button class="tab-btn">콘도</button>
+              <button class="tab-btn">휘티니스</button>
+            </div>
+            <div class="cont">
+              <div class="active" data-tab="tab01">
+                <div class="cont__head">
+                  <div>회원권 명</div>
+                  <div>금일시세</div>
+                  <div>전주대비등락</div>
+                </div>
+                <div class="cont__body type2">
+                  <div class="colum">
+                    <div>그레이스 주중(4000)</div>
+                    <div>14,100</div>
+                    <div>0</div>
+                  </div>
+                </div>
+              </div>
+              <div data-tab="tab02">
+                <div class="cont__head">
+                  <div>회원권 명</div>
+                  <div>금일시세</div>
+                  <div>전주대비등락</div>
+                </div>
+                <div class="cont__body type2">
+                  <div class="colum">
+                    <div>텝2</div>
+                    <div>14,100</div>
+                    <div>0</div>
+                  </div>
+                </div>
+              </div>
+              <div data-tab="tab03">
+                <div class="cont__head">
+                  <div>회원권 명</div>
+                  <div>금일시세</div>
+                  <div>전주대비등락</div>
+                </div>
+                <div class="cont__body type2">
+                  <div class="colum">
+                    <div>텝3</div>
+                    <div>14,100</div>
+                    <div>0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_box">
+          <!-- 인기 골프 회원권-->
+          <div class="tab">
+            <div class="head">
+              <h3 class="title">인기 골프회원권</h3>
+              <button class="more">전체보기</button>
+            </div>
+            <div class="tabs">
+              <button class="tab-btn active">수도권</button>
+              <button class="tab-btn">부산권</button>
+              <button class="tab-btn">대구권</button>
+              <button class="tab-btn">강원권</button>
+              <button class="tab-btn">무기명</button>
+              <button class="tab-btn">분양중</button>
+            </div>
+            <div class="cont">
+              <div class="active" data-tab="tab01">
+                <div class="grid_box">
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                </div>
+              </div>
+              <div data-tab="tab02">
+                <div class="grid_box">
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 인기 콘도 회원권-->
+          <div class="tab">
+            <div class="head">
+              <h3 class="title">인기 골프회원권</h3>
+              <button class="more">전체보기</button>
+            </div>
+            <div class="tabs condo">
+              <button class="tab-btn active">수도권</button>
+              <button class="tab-btn">부산권</button>
+              <button class="tab-btn">대구권</button>
+              <button class="tab-btn">강원권</button>
+              <button class="tab-btn">무기명</button>
+              <button class="tab-btn">분양중</button>
+            </div>
+            <div class="cont">
+              <div class="active" data-tab="tab01">
+                <div class="grid_box">
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 인기 휘트니스 회원권-->
+          <div class="tab">
+            <div class="head">
+              <h3 class="title">인기 골프회원권</h3>
+              <button class="more">전체보기</button>
+            </div>
+            <div class="tabs fitness">
+              <button class="tab-btn active">수도권</button>
+              <button class="tab-btn">부산권</button>
+              <button class="tab-btn">대구권</button>
+              <button class="tab-btn">강원권</button>
+              <button class="tab-btn">무기명</button>
+              <button class="tab-btn">분양중</button>
+            </div>
+            <div class="cont">
+              <div class="active" data-tab="tab01">
+                <div class="grid_box">
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                  <div class="item">
+                    <div class="img">
+                      <img src="./images/golf01.jpg" alt="골프회원권" />
+                    </div>
+                    <div class="text">이스트밸리CC(개인)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="wrap-test">
+      <div></div>
+    </div>
+    <script src="./js/common.js"></script>
+  </body>
+</html>
