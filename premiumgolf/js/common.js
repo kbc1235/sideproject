@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+new Swiper(".swiper", {
   autoplay: {
     autoplay: true,
     delay: 3000,
@@ -12,6 +12,9 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const tabs = document.querySelectorAll(".tab");
+tabs.forEach((element) => initTabs(element.id));
 
 /**
  * `initTabs` 함수는 웹 페이지의 탭 기능을 초기화하는 역할을 합니다.
