@@ -1,8 +1,5 @@
-new Swiper(".swiper", {
-  autoplay: {
-    autoplay: true,
-    delay: 3000,
-  },
+const swiper = new Swiper(".swiper", {
+  autoplay: true,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -12,7 +9,6 @@ new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
 const tabs = document.querySelectorAll(".tab");
 tabs.forEach((element) => initTabs(element.id));
 
