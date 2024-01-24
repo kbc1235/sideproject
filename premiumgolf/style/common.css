@@ -284,6 +284,7 @@ button {
   display: flex;
   max-width: 1084px;
   margin: 28px auto 0;
+  padding-bottom: 120px;
 }
 .contents > div {
   min-width: 300px;
