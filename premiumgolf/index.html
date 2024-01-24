@@ -1984,10 +1984,11 @@
 
     <script src="./js/common.js"></script>
     <script>
-      initTabs("tabSet1");
-      initTabs("tabSet2");
-      initTabs("tabSet3");
-      initTabs("tabSet4");
+      const tabs = document.querySelectorAll(".tab");
+
+      tabs.forEach((ele) => {
+        return initTabs(ele.id);
+      });
     </script>
   </body>
 </html>
