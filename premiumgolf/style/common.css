@@ -191,6 +191,7 @@ button {
   left: 0;
   z-index: 1000;
   width: 100%;
+  max-height: 127;
   display: flex;
   align-items: center;
   padding: 2.3rem 5rem;
@@ -254,6 +255,47 @@ button {
 }
 .header__usemenu .sell_btn button:hover {
   background-color: var(--subColor);
+}
+.header .search_box {
+  display: none;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: var(--mainColor);
+  height: 127px;
+}
+.header .search_box.active {
+  display: block;
+}
+.header .search_box .inner {
+  max-width: 1084px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .search_box .input {
+  display: flex;
+  justify-content: center;
+  max-width: 460px;
+  width: 100%;
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.header .search_box .input input {
+  display: block;
+  width: 100%;
+  border: none;
+}
+.header .search_box button {
+  background: transparent;
+}
+.header .search_box .close_btn {
+  padding: 10px 20px;
+  margin-left: 8px;
 }
 
 .swiper {

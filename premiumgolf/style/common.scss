@@ -21,6 +21,7 @@
   left: 0;
   z-index: 1000;
   width: 100%;
+  max-height: 127;
   display: flex;
   align-items: center;
   padding: 2.3rem 5rem;
@@ -88,6 +89,47 @@
           background-color: var(--subColor);
         }
       }
+    }
+  }
+  .search_box {
+    display: none;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: var(--mainColor);
+    height: 127px;
+    &.active {
+      display: block;
+    }
+    .inner {
+      max-width: 1084px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .input {
+      display: flex;
+      justify-content: center;
+      max-width: 460px;
+      width: 100%;
+      background: #fff;
+      border-radius: 30px;
+      padding: 10px 20px;
+      input {
+        display: block;
+        width: 100%;
+        border: none;
+      }
+    }
+    button {
+      background: transparent;
+    }
+    .close_btn {
+      padding: 10px 20px;
+      margin-left: 8px;
     }
   }
 }

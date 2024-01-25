@@ -27,7 +27,7 @@
       </div>
       <div class="header__usemenu">
         <div class="search_btn">
-          <button type="button">
+          <button type="button" onclick="toggleSearchBox()">
             <img src="./images//ic_search2.png" alt="search" />
           </button>
         </div>
@@ -37,6 +37,19 @@
           </button>
         </div>
         <div class="sell_btn"><button type="button">매매신청</button></div>
+      </div>
+      <div class="search_box">
+        <div class="inner">
+          <div class="input">
+            <input type="text" placeholder="검색어를 입력해주세요." />
+            <button type="button">
+              <img src="./images/ic_search.png" alt="search" />
+            </button>
+          </div>
+          <button type="button " class="close_btn" onclick="toggleSearchBox()">
+            <img src="./images/ic_close.png" alt="close" />
+          </button>
+        </div>
       </div>
     </header>
     <main class="main">

@@ -82,3 +82,14 @@ window.addEventListener("scroll", function () {
     fixedBanner.style.top = "720px";
   }
 });
+
+function toggleSearchBox() {
+  const searchBox = document.querySelector(".search_box");
+
+  if (searchBox.classList.contains("active")) {
+    searchBox.classList.remove("active");
+  } else {
+    document.querySelector(".search_box input").focus();
+    searchBox.classList.add("active");
+  }
+}
