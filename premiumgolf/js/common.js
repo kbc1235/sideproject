@@ -69,3 +69,16 @@ function initTabs(tabSetId) {
     });
   });
 }
+
+const header = document.querySelector(".header");
+const fixedBanner = document.querySelector(".fixed_banner");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 650) {
+    header.classList.add("active");
+    fixedBanner.style.top = "150px";
+  } else {
+    header.classList.remove("active");
+    fixedBanner.style.top = "720px";
+  }
+});
