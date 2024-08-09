@@ -1,0 +1,415 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/Pretendard-Thin.woff2") format("woff2"), url("../font/Pretendard-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/Pretendard-Light.woff2") format("woff2"), url("../font/Pretendard-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/Pretendard-Regular.woff2") format("woff2"), url("../font/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/Pretendard-Medium.woff2") format("woff2"), url("../font/Pretendard-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/Pretendard-SemiBold.woff2") format("woff2"), url("../font/Pretendard-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/Pretendard-Bold.woff2") format("woff2"), url("../font/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/Pretendard-ExtraBold.woff2") format("woff2"), url("../font/Pretendard-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/Pretendard-ExtraBold.woff2") format("woff2"), url("../font/Pretendard-ExtraBold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; /* Ensured box-sizing is applied to all elements */
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Pretendard", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+input[type=checkbox] {
+  margin: 0;
+  padding: 0;
+}
+
+.calendar-container {
+  padding: 0 20px;
+}
+.calendar-container .calendar-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.calendar-container .calendar-btn {
+  margin-top: 14px;
+}
+.calendar-container .calendar-btn button {
+  border-color: #aaaaaa;
+  color: #aaaaaa;
+  font-size: 0.875rem;
+}
+.calendar-container .calendar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+}
+.calendar-container .calendar-icon img {
+  width: 100%;
+}
+.calendar-container .calendar-input {
+  width: calc(100% - 220px);
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #666666;
+}
+.calendar-container .calendar-separator {
+  margin: 0 10px;
+  font-size: 1rem;
+  color: #666666;
+}
+
+.btn-box {
+  display: flex;
+  gap: 10px;
+}
+.btn-box > button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border: 1px solid #5d7cf9;
+  background: #fff;
+  font-size: 0.875rem;
+  border-radius: 30px;
+  color: #5d7cf9;
+}
+.btn-box > button.primary {
+  background: #5d7cf9;
+  border-color: #5d7cf9;
+  color: #fff;
+}
+
+.custom-select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.custom-select-container label {
+  font-size: 0.875rem;
+  color: #666666;
+}
+.custom-select-container label.important-input {
+  color: #f03063;
+}
+.custom-select-container .custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.custom-select-container .custom-select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.custom-select-container .custom-select-trigger {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1rem;
+  border-bottom: 1px solid #aaaaaa;
+  background: white;
+  cursor: pointer;
+}
+.custom-select-container .custom-select-trigger .arrow {
+  height: 6px;
+}
+.custom-select-container .custom-select-trigger .arrow > img {
+  height: 100%;
+}
+.custom-select-container .custom-select .custom-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  background: white;
+  display: none;
+  flex-direction: column;
+  z-index: 1;
+}
+.custom-select-container .custom-select .custom-option {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.custom-select-container .custom-select .custom-option:hover, .custom-select-container .custom-select .custom-option.selected {
+  background: #f0f0f0;
+}
+.custom-select-container .custom-select.open .custom-options {
+  display: flex;
+}
+
+.custom-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.custom-input-container.full {
+  flex: 1;
+}
+.custom-input-container.full .input input[type=text] {
+  width: 100% !important;
+}
+.custom-input-container label {
+  font-size: 0.875rem;
+  color: #666666;
+}
+.custom-input-container label.important-input {
+  color: #f03063;
+}
+.custom-input-container .custom-input-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.custom-input-container .custom-input-wrapper > .input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.custom-input-container .custom-input-wrapper > .input input[type=text] {
+  width: 62px;
+  border: none;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.calendar-popup {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+}
+.calendar-popup .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.calendar-popup .calendar-header .calendar-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.calendar-popup .calendar-header > button {
+  flex: 1;
+  max-width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border: 1px solid #aaaaaa;
+  background: #fff;
+  font-size: 0.875rem;
+  border-radius: 4px;
+}
+.calendar-popup .calendar-header > button.primary {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+.calendar-popup .calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+.calendar-popup .calendar-day {
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.calendar-popup .calendar-day.empty {
+  color: #666666;
+}
+.calendar-popup .calendar-day.sunday {
+  color: #ff002e;
+}
+.calendar-popup .calendar-day.saturday {
+  color: #5d7cf9;
+}
+.calendar-popup .calendar-day.disabled {
+  color: #d9d9d9;
+  cursor: not-allowed;
+}
+.calendar-popup .calendar-day:hover {
+  background: #eee;
+}/*# sourceMappingURL=common.css.map */

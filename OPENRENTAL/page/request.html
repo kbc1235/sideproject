@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <script src="../js/common.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header" class="sub">
+        <h1>
+          <a href="/"><span>OPENR</span>ENTAL</a>
+        </h1>
+      </header>
+      <nav id="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#"><img src="../images/icon/icon-nav1.svg" alt="홈" /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"
+              ><img src="../images/icon/icon-nav2.png" alt="검색"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"
+              ><img src="../images/icon/icon-nav3.png" alt="추가"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"
+              ><img src="../images/icon/icon-nav4.png" alt="알람"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="profile-btn"
+              ><img src="../images/@dump/img_dump@1.png" alt="프로필"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <main id="container" class="payment-container">
+        <section class="payment-section">
+          <div class="title-box">
+            <h2 class="title">납부정보 변경요청</h2>
+            <p class="sub-title">
+              *타 명의의 납부정보로 변경을 원하실 경우 1:1문의 바랍니다.
+            </p>
+          </div>
+          <div class="payment-input-box">
+            <div class="custom-select-container">
+              <label for="custom-select " class="important-input"
+                >납부일*</label
+              >
+              <div class="custom-select-wrapper">
+                <div class="custom-select" id="custom-select">
+                  <div class="custom-select-trigger">
+                    <span>10일</span>
+                    <div class="arrow">
+                      <img src="../images/icon/icon-arrow-b.png" />
+                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="10"
+                      >10일</span
+                    >
+                    <span class="custom-option" data-value="20">20일</span>
+                    <span class="custom-option" data-value="30">30일</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-select-container">
+              <label for="custom-select " class="important-input"
+                >납부수단*</label
+              >
+              <div class="custom-select-wrapper">
+                <div class="custom-select" id="custom-select">
+                  <div class="custom-select-trigger">
+                    <span>카드결제</span>
+                    <div class="arrow">
+                      <img src="../images/icon/icon-arrow-b.png" />
+                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="카드결제"
+                      >카드결제</span
+                    >
+                    <span class="custom-option" data-value="현금결제"
+                      >현금결제</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-input-box">
+            <div class="custom-select-container">
+              <label for="custom-select " class="important-input"
+                >은행 / 카드사명*</label
+              >
+              <div class="custom-select-wrapper">
+                <div class="custom-select" id="custom-select">
+                  <div class="custom-select-trigger">
+                    <span>국민은행</span>
+                    <div class="arrow">
+                      <img src="../images/icon/icon-arrow-b.png" />
+                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="국민은행"
+                      >국민은행</span
+                    >
+                    <span class="custom-option" data-value="기업은행"
+                      >기업은행</span
+                    >
+                    <span class="custom-option" data-value="신한은행"
+                      >신한은행</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-input-container">
+              <label for="custom-input " class="important-input"
+                >카드유효기간*</label
+              >
+              <div class="custom-input-wrapper">
+                <p class="input">
+                  <input type="text" id="custom-input" placeholder="MM" />
+                  <span>월</span>
+                </p>
+                <p class="input">
+                  <input type="text" id="custom-input" placeholder="YY" />
+                  <span>년</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="payment-input-box not-padding">
+            <div class="custom-input-container full">
+              <label for="custom-input " class="important-input"
+                >계좌 / 카드 번호*</label
+              >
+              <div class="custom-input-wrapper">
+                <p class="input">
+                  <input
+                    type="text"
+                    id="custom-input"
+                    placeholder="000000000000000"
+                  />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="payment-input-box">
+            <div class="custom-select-container">
+              <label for="custom-select">개인사업자 여부</label>
+              <div class="custom-select-wrapper">
+                <div class="custom-select" id="custom-select">
+                  <div class="custom-select-trigger">
+                    <span>예</span>
+                    <div class="arrow">
+                      <img src="../images/icon/icon-arrow-b.png" />
+                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="10"
+                      >예</span
+                    >
+                    <span class="custom-option" data-value="20">아니오</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-select-container">
+              <label for="custom-select">세금계산서 발행여부</label>
+              <div class="custom-select-wrapper">
+                <div class="custom-select" id="custom-select">
+                  <div class="custom-select-trigger">
+                    <span>예</span>
+                    <div class="arrow">
+                      <img src="../images/icon/icon-arrow-b.png" />
+                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="카드결제"
+                      >예</span
+                    >
+                    <span class="custom-option" data-value="현금결제"
+                      >아니오</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-input-box not-padding">
+            <div class="custom-input-container full">
+              <label for="custom-input">사업자등록번호</label>
+              <div class="custom-input-wrapper">
+                <p class="input">
+                  <input
+                    type="text"
+                    id="custom-input"
+                    placeholder="000000000000000"
+                  />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="payment-input-box not-padding">
+            <div class="custom-input-container full">
+              <label for="custom-input">이메일주소</label>
+              <div class="custom-input-wrapper">
+                <p class="input">
+                  <input
+                    type="text"
+                    id="custom-input"
+                    placeholder="000000000000000"
+                  />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btn-box" style="margin-top: 20px">
+            <button class="btn primary">본인인증 후 변경</button>
+            <button class="btn">취소</button>
+          </div>
+        </section>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>

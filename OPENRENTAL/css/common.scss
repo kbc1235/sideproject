@@ -1,0 +1,249 @@
+@import "../css/_reset.scss";
+@import "../css/_color.scss";
+@import "../css/_mixin.scss";
+
+.calendar-container {
+  padding: 0 20px;
+  & .calendar-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $BORDER-COLOR;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  & .calendar-btn {
+    margin-top: 14px;
+    & button {
+      border-color: $BORDER-COLOR;
+      color: $BORDER-COLOR;
+      font-size: rem(14);
+    }
+  }
+
+  & .calendar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .calendar-input {
+    width: calc(100% - 220px);
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: rem(16);
+    color: $GRAY-COLOR;
+  }
+
+  & .calendar-separator {
+    margin: 0 10px;
+    font-size: rem(16);
+    color: $GRAY-COLOR;
+  }
+}
+
+.btn-box {
+  display: flex;
+  gap: 10px;
+  & > button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border: 1px solid #5d7cf9;
+    background: $WHITE-COLOR;
+    font-size: rem(14);
+    border-radius: 30px;
+    color: #5d7cf9;
+
+    &.primary {
+      background: #5d7cf9;
+      border-color: #5d7cf9;
+      color: $WHITE-COLOR;
+    }
+  }
+}
+
+.custom-select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-size: rem(14);
+    color: $GRAY-COLOR; // Replace with your gray color variable
+    &.important-input {
+      color: #f03063;
+    }
+  }
+
+  .custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .custom-select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &-trigger {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      font-size: rem(16);
+      border-bottom: 1px solid $BORDER-COLOR; // Replace with your border color variable
+      background: white;
+      cursor: pointer;
+
+      .arrow {
+        height: 6px;
+        & > img {
+          height: 100%;
+        }
+      }
+    }
+
+    .custom-options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      border: 1px solid $BORDER-COLOR; // Replace with your border color variable
+      border-radius: 5px;
+      background: white;
+      display: none;
+      flex-direction: column;
+      z-index: 1;
+    }
+
+    .custom-option {
+      padding: 10px;
+      font-size: rem(16);
+      cursor: pointer;
+
+      &:hover,
+      &.selected {
+        background: #f0f0f0; // Replace with your hover color
+      }
+    }
+  }
+
+  .custom-select.open .custom-options {
+    display: flex;
+  }
+}
+
+.custom-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  &.full {
+    flex: 1;
+
+    & .input {
+      input[type="text"] {
+        width: 100% !important;
+      }
+    }
+  }
+  & label {
+    font-size: rem(14);
+    color: $GRAY-COLOR; // Replace with your gray color variable
+    &.important-input {
+      color: #f03063;
+    }
+  }
+
+  & .custom-input-wrapper {
+    display: flex;
+    gap: 10px;
+
+    & > .input {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      input[type="text"] {
+        width: 62px;
+        border: none;
+        border-bottom: 1px solid $BORDER-COLOR;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+.calendar-popup {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+
+  & .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    & .calendar-title {
+      font-size: rem(16);
+      font-weight: bold;
+    }
+    & > button {
+      flex: 1;
+      max-width: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+      border: 1px solid $BORDER-COLOR;
+      background: $WHITE-COLOR;
+      font-size: rem(14);
+      border-radius: 4px;
+
+      &.primary {
+        background: $BLACK-COLOR;
+        border-color: $BLACK-COLOR;
+        color: $WHITE-COLOR;
+      }
+    }
+  }
+  & .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  & .calendar-day {
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    &.empty {
+      color: $GRAY-COLOR;
+    }
+    &.sunday {
+      color: $RED-COLOR;
+    }
+    &.saturday {
+      color: $MAIN-COLOR;
+    }
+    &.disabled {
+      color: $LIGHT-GRAY-COLOR;
+      cursor: not-allowed;
+    }
+    &:hover {
+      background: #eee;
+    }
+  }
+}

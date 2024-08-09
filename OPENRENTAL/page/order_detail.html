@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <script src="../js/common.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header" class="sub">
+        <h1>
+          <a href="/"><span>OPENR</span>ENTAL</a>
+        </h1>
+      </header>
+      <nav id="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#"><img src="../images/icon/icon-nav1.svg" alt="홈" /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"
+              ><img src="../images/icon/icon-nav2.png" alt="검색"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"
+              ><img src="../images/icon/icon-nav3.png" alt="추가"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"
+              ><img src="../images/icon/icon-nav4.png" alt="알람"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="profile-btn"
+              ><img src="../images/@dump/img_dump@1.png" alt="프로필"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <main id="container" class="detail-container">
+        <section class="detail-section">
+          <div class="detail-top">
+            <h2 class="title">보유렌탈현황</h2>
+            <div class="detail-top-info">
+              <div class="info-item">
+                <p>
+                  <span class="icon-detail">
+                    <img src="../images/icon/icon-detail-01.png" />
+                  </span>
+                  <span>보유렌탈</span>
+                </p>
+                <p><span class="num">3</span>개</p>
+              </div>
+              <div class="info-item">
+                <p>
+                  <span class="icon-detail">
+                    <img src="../images/icon/icon-detail-02.png" />
+                  </span>
+                  <span>당월 결제 예정</span>
+                </p>
+                <p><span class="num">0,000</span>원</p>
+              </div>
+              <div class="info-item">
+                <p>
+                  <span class="icon-detail">
+                    <img src="../images/icon/icon-detail-03.png" />
+                  </span>
+                  <span>당월 정기 점검 예정</span>
+                </p>
+                <p><span class="num">3</span>건</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail-bottom"></div>
+        </section>
+        <section class="detail-list-section">
+          <div class="calendar-container">
+            <div class="calendar-box">
+              <div class="calendar-icon">
+                <img src="../images/icon/icon-calendar.png" alt="캘린더" />
+              </div>
+              <input
+                type="text"
+                class="calendar-input"
+                placeholder="0000.00.00"
+              />
+              <span class="calendar-separator">~</span>
+              <div class="calendar-icon">
+                <img src="../images/icon/icon-calendar.png" alt="캘린더" />
+              </div>
+              <input
+                type="text"
+                class="calendar-input"
+                placeholder="0000.00.00"
+              />
+            </div>
+            <div class="calendar-btn btn-box">
+              <button class="btn-period primary" data-period="all">전체</button>
+              <button class="btn-period" data-period="1">1개월</button>
+              <button class="btn-period" data-period="3">3개월</button>
+              <button class="btn-period" data-period="6">6개월</button>
+            </div>
+          </div>
+          <div class="order-list">
+            <div class="no-data">
+              <span>보유하신 렌탈 목록이 없습니다.</span>
+            </div>
+          </div>
+
+          <div class="order-list">
+            <div class="order-item">
+              <div class="order-item-top">
+                <div class="top-header">
+                  <p>
+                    <label><input type="checkbox" /></label>
+                  </p>
+                  <p><span>주문번호</span><span>SD000000000</span></p>
+                  <p><span>계약일</span><span>2024/05/30</span></p>
+                </div>
+                <div class="top-body">
+                  <div class="img-box">
+                    <img
+                      src="../images/@dump/img_dump@4.png"
+                      alt="상품이미지"
+                    />
+                  </div>
+                  <div class="info-box">
+                    <div class="product-title">
+                      <p class="brand">
+                        <span class="brand-icon"
+                          ><img
+                            src="../images/@dump/img_dump@brand2.png" /></span
+                        ><span>RF90DG9111S9</span>
+                      </p>
+                      <p class="product-name">
+                        <span>BESPOKE 냉장고 4도어 902 L</span>
+                      </p>
+                    </div>
+                    <div class="price-box">
+                      <p><span>납부일</span><span>매월 10일</span></p>
+                      <p><span>납부회차</span><span>12회차/60회</span></p>
+                      <p><span>납부예정금액</span><span>1,186,600원</span></p>
+                      <p>
+                        <span>잔여금액</span
+                        ><span>1,186,600원/1,186,600원</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-item-bottom">
+                <div class="btn-box">
+                  <button class="btn-cancel">주문상세내역</button>
+                  <button class="btn-pay">납부상세내역</button>
+                  <button class="btn-pay">AS신청</button>
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="order-item-top">
+                <div class="top-header">
+                  <p>
+                    <label><input type="checkbox" /></label>
+                  </p>
+                  <p><span>주문번호</span><span>SD000000000</span></p>
+                  <p><span>계약일</span><span>2024/05/30</span></p>
+                </div>
+                <div class="top-body">
+                  <div class="img-box">
+                    <img
+                      src="../images/@dump/img_dump@4.png"
+                      alt="상품이미지"
+                    />
+                  </div>
+                  <div class="info-box">
+                    <div class="product-title">
+                      <p class="brand">
+                        <span class="brand-icon"
+                          ><img
+                            src="../images/@dump/img_dump@brand2.png" /></span
+                        ><span>RF90DG9111S9</span>
+                      </p>
+                      <p class="product-name">
+                        <span>BESPOKE 냉장고 4도어 902 L</span>
+                      </p>
+                    </div>
+                    <div class="price-box">
+                      <p><span>납부일</span><span>매월 10일</span></p>
+                      <p><span>납부회차</span><span>12회차/60회</span></p>
+                      <p><span>납부예정금액</span><span>1,186,600원</span></p>
+                      <p>
+                        <span>잔여금액</span
+                        ><span>1,186,600원/1,186,600원</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-item-bottom">
+                <div class="btn-box">
+                  <button class="btn-cancel">주문상세내역</button>
+                  <button class="btn-pay">납부상세내역</button>
+                  <button class="btn-pay">AS신청</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>
